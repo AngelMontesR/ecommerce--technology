@@ -159,3 +159,53 @@ img {
     text-transform: uppercase;
     margin-top: 2rem;
 }
+
+/* Sobre Nosotros */
+
+.sobre-nosotros{
+    background-image: linear-gradient(to bottom,transparent 50%, var(--primario) 0%), url(../img/newsletter.jpg);    background-position: center,bottom;
+    background-size: 100%, cover;
+    margin-top: 5rem;
+}
+
+@media (min-width:768px){
+    .sobre-nosotros{
+        background-image: linear-gradient(to left,transparent 50%, var(--primario) 0%), url(../img/newsletter.jpg);        background-position: center,center;
+        background-size: 100%, cover; 
+        background-position: right,center;
+    }
+}
+
+.contenedor-sobre-nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,40rem);
+    row-gap: 5rem;
+}
+
+@media (min-width:768px){
+    .contenedor-sobre-nosotros{
+        grid-template-rows: unset;
+        row-gap: 0;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+    }
+}
+
+.texto-sobre-nosotros{
+    grid-row: 2/3;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.texto-sobre-nosotros h2{
+    font-size: 4.4rem;
+}
+
+.texto-sobre-nosotros p{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
