@@ -128,3 +128,34 @@ img {
     color:transparent;
     -webkit-background-clip: text;
 }
+
+/* Iconos */
+
+@media (min-width:768px){
+    .contenedor-iconos{ 
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+}
+
+.icono-item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.icono-item img{
+    width: 10rem;
+}
+
+.icono-item h3{
+    font-size: 2.4rem;
+    margin: 0;
+    color: var(--primario);
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
