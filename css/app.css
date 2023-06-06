@@ -122,3 +122,9 @@ img {
     font-weight: bold;
 }
 
+.nombre-producto{
+    background: linear-gradient(to right,var(--primario) 0%, var(--secundario) 100%);
+    background-clip: text;
+    color:transparent;
+    -webkit-background-clip: text;
+}
