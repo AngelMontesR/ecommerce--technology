@@ -350,6 +350,8 @@ img {
 
 .contacto-texto{
     grid-row: 2/3;
+    padding-bottom: 2rem;
+    margin-left: 2rem;
 }
 
 @media (min-width:768px){
@@ -383,8 +385,15 @@ img {
     border: none;
 }
 
+.formulario input[type="submit"]:hover{
+    background-color: var(--secundario);
+}
 
-
-.input-group{
-
+.footer{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    padding: 5rem;
+    color: var(--primario);
+    background-color: var(--blanco);
 }
